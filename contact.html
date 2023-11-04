@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html >
+<head>
+   
+    <style>
+        body{
+            background-color: rgb(28, 27, 27);
+            color: white;
+        }
+        .nav li{
+            display: inline-block;
+            float: top;
+            list-style: none;
+            margin: 30px;
+            padding: 8px;
+            font-family: sans-serif
+        }
+        .nav li a{
+            padding: 4px;
+            text-decoration: none;
+           cursor: pointer;
+           color: white;
+           
+          
+        }
+        .nav a:hover{
+            color: orange;
+        }
+        .form{
+          
+            
+        }
+        input{
+            border-radius: 5px;
+            cursor: alias;
+            background-color: black;
+            width: 90%;
+            padding: 15px;
+            color: white;
+            border:0;
+            outline: none;
+        }
+        .btn{
+          
+            width: 100%;
+            display: flex;
+        
+            justify-content: center;
+         
+        }
+        .submit-btn{
+           padding: 10px 30px;
+           background-color: orange;
+           border-radius: 5px;
+           color:white;
+            font-weight: bold;
+           border:0;
+           border-color: orange;
+
+        }
+       
+        #demo{
+            font-size:30px;
+            color: orange;
+            font-weight: 600;
+            display: none;
+            margin:auto
+        }
+        .container{
+            font-size: 20px;
+            margin: auto;
+            width: 100%;
+            /* width: 50%;
+            border: 2px solid white; */
+            width: 100%;
+            display: flex;
+            
+            justify-content: center;
+            
+            
+        }
+        .container input{
+        
+          
+        }
+       /* #thankyou{
+        color:red;
+        font-size: 50px;
+       } */
+       h3{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+       }
+       .head{
+      
+        font-size: 35px;
+      
+        color: orange;
+       }
+       #id1{
+        display: block;
+        font-weight: 300;
+        font-family: sans-serif
+
+       }
+      
+       #id2{
+        display: none;
+       }
+      .demo{
+
+            margin: auto;
+      }
+
+      #form-fields{
+        display: block;
+      }
+
+       
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="PORTFOLIO.html">HOME</a></li>
+            <li><a href="port.html">PORTFOLIO</a></li>
+            <li><a href="info.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+    
+    
+        </ul>
+       </div>
+       
+       <div class="container">
+      
+            <form action="" class="form">
+                <h3 class="head" id="id1">For any queries ping me</h3>
+                <h3 class="head" id="id2"> Thank you for contacting!!!</h3>
+                <div id="form-fields">
+                    <input type="text" name="" placeholder="Enter your name" id=""><br><br>
+                    <input type="text" placeholder="Purpose of contacting"><br><br>
+                    <input type="number" placeholder="Contact number"><br><br>
+                </div>
+              
+            <br>
+            </form>
+        
+       </div>
+       <div class="btn">
+        <button class="submit-btn" onclick="myFunction()">Submit</button>
+    </div>
+
+    <p id="demo">
+       
+       </p>
+     
+
+   
+       
+       <script>
+       function myFunction() {
+      
+         document.getElementById("demo").style.display = "block";
+         document.getElementById("form-fields").style.display = "none";
+         document.getElementById("id1").style.display = "none";
+         document.getElementById("id2").style.display = "block";
+         
+         setTimeout(function () {
+            document.getElementById("demo").style.display = "none";
+            document.getElementById("form-fields").style.display = "block";
+            document.getElementById("id1").style.display = "block";
+            document.getElementById("id2").style.display = "none";
+        
+        }, 4000);
+
+
+       }
+       </script>
+       
+</body>
+</html>
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<body>
+<h1>HTML DOM Events</h1>
+<h2>The onclick Event</h2>
+
+<p>The onclick event triggers a function when an element is clicked on.</p>
+<p>Click to trigger a function that will output "Hello World":</p>
+
+<button onclick="myFunction()">Click me</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Hello World";
+}
+</script>
+
+</body>
+</html> -->
